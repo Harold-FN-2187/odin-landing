@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    font-family: "Roboto";
+    color:teal;
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}
+
+
+#logo {
+    color: #F9FAF8;
+    font-size: 24px;
+}
+.menu-container{
+    background-color: #1F2937;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu {
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#link1 {
+    color:#F9FAF8;
+}
+
+
+
+.hero-section {
+    background-color: #1F2937;
+}
+
+.hero-section h1 {
+    font-weight: 900;
+    font-size: 48px;
+    color: #F9FAF8;
+}
+
+
+.main-section h1{
+    font-size: 36px;
+    color:#1F2937;
+    font-weight: 900;
+    align-items: center;
+}
+.header-section a {
+    color: #E5E7EB;
+    align-self: flex-end;
+}
+.header-section h1 {
+    color: #E5E7EB;
+}
+.hero-section h1 {
+    font-size: 48px;
+    font-weight: 900;
+    color:#F9FAF8;
+}
+
+.hero-section h3 {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+
+.button {
+    background-color: #3882F6;
+    color:#F9FAF8;
+    padding:15px;
+    border-radius: 10%;
+}
+
+.quote-section {
+    background-color: #E5E7EB;
+
+}
+
+.quote-section p {
+    font-size: 36px;
+    font-weight:bold;
+    color: #1F2937;
+}
+
+.bottom
+{
+    background-color: #3882F6;
+    color: white;
+}
+
+.bottom h2 {
+    color: white;
+}
+
+.bottom h3 {
+    color: white;
+}
