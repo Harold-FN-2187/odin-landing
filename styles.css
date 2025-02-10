@@ -1,78 +1,131 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
-    font-family: "Roboto";
-    /* margin: 0;
-    padding: 0; */
-    /* box-sizing: border-box; */
+/* Global Styles */
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Include padding and border in element's total width/height */
 }
 
-
+/* Header Styles */
 .header {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #1F2937;
-    padding:20px;
-}
-
-.menu {
-    background-color: #1F2937;
-    text-align: center;
-
-    font-size: 18px;
-    border-radius: 4px;
-    font-size: 18px;
-    color:#E5E7EB
-}
-
-.menu a {
-    text-align: center;
-    padding: 12px;
-    font-size: 18px;
-    color: #E5E7EB;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+  padding: 20px;
 }
 
 .logo {
-    font-size: 24px;
-    color:#F9FAF8;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
+  color:#F9FAF8;
 }
 
+.menu {
+  display: flex; /* Make menu items inline */
+  list-style: none; 
+  background-color: #1F2937;
+  font-size: 18px;
+  color:#E5E7EB
+
+}
+
+.menu a {
+  text-decoration: none;
+  padding: 12px;
+  border-radius: 4px;
+}
+
+
+/* Hero Section Styles */
 .hero {
-    background-color: aqua;
-
+  background-color: #1F2937;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center content vertically */
+  min-height: 100vh; /* Make hero section full viewport height */
+  text-align: center;
 }
 
-.hero-main {
-    background-color: rebeccapurple;
-    color:white;
-
+.hero-main-one {
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 20px; 
 }
 
+.hero-main-two {
+  font-size: 18px;
+  color: #E5E7EB; 
+}
+
+/* Secondary Section Styles */
 .hero-secondary {
-    background-color: teal;
-    color:wheat;
-
+  background-color: #E5E7EB; 
+  padding: 50px 0; /* Add padding to top and bottom */
 }
+
+.hero-secondary h2 {
+  margin-bottom: 20px;
+}
+
+/* Information Section Styles */
+.information {
+  background-color: #1F2937;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.information h2 {
+  margin-bottom: 30px;
+}
+
 .button {
-    background-color: #3882F6;
-    /* margin:5px; */
-    color:white;
-    padding:9px 20px 9px 20px;
-    border-radius: 8px;
-    align-items: center;
-    border: 2px solid white;
-
+  background-color: #3882F6;
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.footer {
-    background-color: #3882F6;
-    margin-bottom: 0px;
-    text-align: center;
-    padding: 20px;
-    color: #F9FAF8;
-    background-color:#1F2937 ;
+.button:hover {
+  background-color: #2e79f9; /* Darken button color on hover */
 }
 
+/* Quote Section Styles */
+blockquote {
+  background-color: #E5E7EB;
+  padding: 30px;
+  border-left: 5px solid #1F2937; /* Add a border to the left */
+  margin: 40px 0; 
+}
 
+blockquote p {
+  font-size: 36px;
+  color: #1F2937;
+}
+
+/* Last Section Styles */
+.last-section {
+  display: flex;
+  justify-content: space-between;
+  background-color: #3882F6;
+  color: #fff;
+  padding: 50px;
+}
+
+.last-section > div { /* Target direct children of .last-section */
+  width: 45%; /* Adjust width as needed */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #1F2937;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
